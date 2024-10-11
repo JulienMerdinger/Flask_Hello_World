@@ -32,14 +32,15 @@ def pair(val):
   else:
     return str(val) + "<p>est impaire.</p>"
 
-@app.route('/sommeG/<int:valeur_id>', methods=['GET'])
-def sommeG(valeur_id):  
-  i = 0
-  somme = 0
-  while valeur{i} >= 0 or valeur{i} < 0:
-    somme += valeur{i}
-    i += 1
-  return "<h2>La somme de toutes les entrées est :</h2>" + str(somme)
+@app.route('/sommeG/<string:valeurs>')
+def sommeG(valeur_id):
+  somme = int(valeurs{0})
+  valeurs = valeurs{1:}
+  while valeurs{0} == '/':
+    somme += int(valeurs{0})
+    valeurs = valeurs{1:}
+  return "La somme des éléments est:" + str(somme)
+  
 
                                                                                                                
 if __name__ == "__main__":
