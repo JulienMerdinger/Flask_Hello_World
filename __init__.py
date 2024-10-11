@@ -35,7 +35,7 @@ def pair(val):
 @app.route('/somme_global/<path:valeurs>')
 def somme_global(valeurs):
   lst = valeurs.split('/')
-  somme = lst[0]
+  somme = int(lst[0])
   for i in range (len(lst)-1):
     somme += lst[i+1]
   return "La somme des éléments est:" + str(somme)
