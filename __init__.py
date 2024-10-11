@@ -34,11 +34,10 @@ def pair(val):
 
 @app.route('/sommeG/<string:valeurs>')
 def sommeG(valeur_id):
-  somme = int(valeurs{0})
-  valeurs = valeurs{1:}
-  while valeurs{0} == '/':
-    somme += int(valeurs{0})
-    valeurs = valeurs{1:}
+  lst = valeurs.split('/')
+  somme = lst[0]
+  for i in range (len(lst)-1):
+    somme += lst[i+1]
   return "La somme des éléments est:" + str(somme)
   
 
