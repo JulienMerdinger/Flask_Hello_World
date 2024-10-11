@@ -25,12 +25,7 @@ def carre(val_user):
 def somme(val1, val2):
     return "<h2>La somme de votre valeur est : </h2>" + str(val1 + val2)
 
-@app.route('/parite/<int:val>')
-def somme(val):
-  if val % 2 == 0:
-    return str(val) + "<p>est pair.<p>"
-  else:
-    return str(val) + "<p>est impaire.<p>"
+
                                                                                                                
 if __name__ == "__main__":
   app.run(debug=True)
