@@ -28,9 +28,18 @@ def somme(val1, val2):
 @app.route('/parite/<int:val>')
 def pair(val):
   if val % 2 == 0:
-    return str(val) + "<p>est pair.<p>"
+    return str(val) + "<p>est pair.</p>"
   else:
-    return str(val) + "<p>est impaire.<p>"
+    return str(val) + "<p>est impaire.</p>"
+
+@app.route('/sommeG/<int:valeur_id>')
+def sommeG(valeur_id):  
+  i = 0
+  somme = 0
+  while valeur{i} >= 0 or valeur{i} < 0:
+    somme += valeur{i}
+    i += 1
+  return "<h2>La somme de toutes les entrées est :</h2>" + str(somme)
 
                                                                                                                
 if __name__ == "__main__":
