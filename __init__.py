@@ -40,7 +40,14 @@ def somme_global(valeurs):
     somme += int(lst[i+1])
   return "La somme des éléments est:" + str(somme)
   
-
+@app.route('/max/<path:valeurs>')
+def max(valeurs):
+  lst = valeurs.split('/')
+  max = int(lst[0])
+  for i in range (len(lst)-1):
+    if max < int(lst[i+1]):
+      max = int(lst[i+1])
+  return "Le maximum des éléments est:" + str(max)
                                                                                                                
 if __name__ == "__main__":
   app.run(debug=True)
