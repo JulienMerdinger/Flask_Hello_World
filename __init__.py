@@ -33,7 +33,7 @@ def pair(val):
     return str(val) + "<p>est impaire.</p>"
 
 @app.route('/somme_global/<string:valeurs>')
-def somme_global(valeur_id):
+def somme_global(valeurs):
   lst = valeurs.split('/')
   somme = lst[0]
   for i in range (len(lst)-1):
