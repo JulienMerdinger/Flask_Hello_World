@@ -27,7 +27,7 @@ def somme(val1, val2):
 
 @app.route('/parite/<int:val>')
 def somme(val):
-  if (val % 2 = 0):
+  if (val % 2 == 0):
     return str(val) + "<p>est pair.<p>"
   else:
     return str(val) + "<p>est impaire.<p>"
