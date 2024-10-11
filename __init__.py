@@ -32,7 +32,7 @@ def pair(val):
   else:
     return str(val) + "<p>est impaire.</p>"
 
-@app.route('/sommeG/<int:valeur_id>')
+@app.route('/sommeG/<int:valeur_id>', methods=['GET'])
 def sommeG(valeur_id):  
   i = 0
   somme = 0
